@@ -14,11 +14,28 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.cmake" },
+
+    { import = "lazyvim.plugins.extras.coding.copilot" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
 
     -- add your custom plugins here
     -- 1. plugin to toggle terminal
-    {'akinsho/toggleterm.nvim', version = "*", config = true},
+    {
+      "akinsho/toggleterm.nvim",
+      version = "*",
+      config = true,
+      opts = {
+        float_opts = {
+          border = "single",
+          winblend = 3,
+          highlights = {
+            border = "Normal",
+            background = "Normal",
+          },
+        },
+      },
+    },
 
     -- import/override with your plugins
     { import = "plugins" },
