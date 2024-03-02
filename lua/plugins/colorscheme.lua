@@ -1,12 +1,10 @@
 return {
-  {
-    "folke/tokyonight.nvim",
-    opts = {
-      style = "night",
-      styles = {
-        sidebars = "night",
-        floats = "night",
-      },
-    },
-  },
+  "craftzdog/solarized-osaka.nvim",
+  lazy = true,
+  priority = 1000,
+  opts = function()
+    return {
+      transparent = true,
+    }
+  end,
 }
