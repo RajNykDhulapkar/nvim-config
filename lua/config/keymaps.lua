@@ -2,7 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- lazyvim : user defined keymaps
+local keymap = vim.keymap
+-- local opts = { noremap = true, silent = true }
 
--- ctrl + backspace to delete a word
-vim.keymap.set("i", "<C-BS>", "<C-w>", { noremap = true, silent = true, desc = "<C-BS> to delete word" })
+-- select all
+keymap.set("n", "<C-a>", "gg<S-v>G")

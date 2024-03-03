@@ -17,4 +17,12 @@ return {
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
+  -- multiple cursors
+  {
+    "mg979/vim-visual-multi",
+    keys = {
+      { "<c-n>", "<Plug>(VM_Create_Cursor)" },
+      { "<c-p>", "<Plug>(VM_Create_Cursors_From_Pattern)" },
+    },
+  },
 }

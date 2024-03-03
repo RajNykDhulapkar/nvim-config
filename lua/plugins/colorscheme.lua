@@ -5,6 +5,10 @@ return {
   opts = function()
     return {
       transparent = true,
+      styles = {
+        comments = "italic",
+        sidebars = "dark",
+      },
     }
   end,
 }
