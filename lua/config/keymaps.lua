@@ -7,5 +7,9 @@ local opts = { noremap = true, silent = true }
 
 -- select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+
 -- delete word with Ctrl+Backspace
+-- for arch linux
+keymap.set("i", "<C-BS>", "<C-w>", opts)
+-- others
 keymap.set("i", "<C-h>", "<C-w>", opts)
